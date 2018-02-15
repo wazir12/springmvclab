@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Customer Database</title>
+    <!-- 	<link rel="stylesheet" type="text/css" href="styles.css"/>
+     --></head>
+<body>
+<header>
+    <h1>Customers in the database</h1>
+</header>
+
+<a th:each="customer: ${customersAsCollection}">
+    <div th:text="${customer.firstName}"></div>
+</a>
+
+</body>
+</html>
